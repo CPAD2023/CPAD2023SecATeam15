@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "source": "../ai_image_generator",
+   
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

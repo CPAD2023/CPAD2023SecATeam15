@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "924655811023",
+    "firebase_url": "https://ai-image-generator-d5aee-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ai-image-generator-d5aee",
+    "storage_bucket": "ai-image-generator-d5aee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924655811023:android:9dd220120c17197f94baba",
+        "android_client_info": {
+          "package_name": "com.astral.ai_image_generator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924655811023-oe7eief9tim6v7mtmpums282mqpr69u8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.astral.ai_image_generator",
+            "certificate_hash": "c3cbe0b0ca60d4ce56d471bb8d317b4ce3bedb60"
+          }
+        },
+        {
+          "client_id": "924655811023-gjmood0rlei67ogr4mdf42i38gjhnins.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5bmnbnn3POgk6gv1r7fvZfLbQfntKwlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924655811023-gjmood0rlei67ogr4mdf42i38gjhnins.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "924655811023-440icsm11qom5sd1cf58b7umint49hdm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.astral.aiImageGenerator"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
