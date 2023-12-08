@@ -13,6 +13,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:memoize/memoize.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeScreenBody extends StatefulWidget {
   const HomeScreenBody({ Key? key }) : super(key: key);
@@ -69,13 +70,29 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
       ),
     );
   }
-    final Future memoizedFetchUserData = memo1((prompt) => fetchData(prompt));
+   
     Future<String> fetchData(String prompt) async {
-      setState(() {
-        _isLoading = true;
-      });
- 
-    try {
+      // setState(() {
+      //   _isLoading=true;
+      // });
+
+      SharedPreferences pref =await SharedPreferences.getInstance();
+      if (pref.containsKey(prompt)){
+        print("From Cached ");
+       
+        final String base64Image = pref.get(prompt).toString();
+        print(base64Image);
+        setState(() {
+          _imageUrl = 'data:image/png;base64,$base64Image';
+          _isLoading = false;
+        
+        
+        });
+
+        return base64Image;
+
+      }else{
+          try {
      
       final request = http.MultipartRequest('POST', Uri.parse(apiUrl));
       request.headers['x-api-key'] = apiKey;
@@ -95,6 +112,7 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
         
         
         });
+        pref.setString( prompt, base64Image);
         return base64Image;
           
       } else {
@@ -113,6 +131,13 @@ class _HomeScreenBodyState extends State<HomeScreenBody> {
         });
      Utils.showSnackBar('Warning',"Error occured while trying to fetch..." , const Icon(FontAwesomeIcons.triangleExclamation,color: Colors.pink,));
     }
+
+      }
+      setState(() {
+        _isLoading = true;
+      });
+ 
+  
     return "none";
   }
 }
