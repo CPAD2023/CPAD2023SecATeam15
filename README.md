@@ -1,5 +1,8 @@
 # CPAD2023SecATeam15
 
+Sriganesh Rao - 2022SP93025
+Elwin Thomas - 2022SP93043
+
 Supported Platforms
 <li>Android</li>
 <li>iOS</li>
