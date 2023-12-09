@@ -6,6 +6,12 @@ Sriganesh Rao - 2022SP93025
 
 Elwin Thomas - 2022SP93043
 
+### Demo link:
+
+<a href=https://github.com/CPAD2023/CPAD2023SecATeam15/tree/main/demo%20video>Astral AI Demo Video</a>
+
+<a href=https://github.com/CPAD2023/CPAD2023SecATeam15/blob/main/presentation%20slides/AI%20text%20to%20image.pdf>Astral AI Presentation Slide</a>
+
 ### Text to image generator
 
 <img width="1277" alt="Screenshot 2023-12-09 at 2 35 21 PM" src="https://github.com/CPAD2023/CPAD2023SecATeam15/assets/127108278/d7607ed7-afff-414d-af12-d0ab23c2c125">
