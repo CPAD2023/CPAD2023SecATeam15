@@ -14,7 +14,7 @@ class SignInController extends GetxController{
   final email=TextEditingController().obs;
   final password=TextEditingController().obs;
 
-
+//login validations logic
   void loginAccount(){
     if(!correctEmail.value){
       Utils.showSnackBar('Warning', 'Enter Correct Email', const Icon(FontAwesomeIcons.triangleExclamation,color: Colors.pink,));
