@@ -12,7 +12,7 @@ class Utils{
   static String extractFirebaseError(String error){
    return error.substring(error.indexOf(']')+1);
   }
-  
+  //Snackbar settings
   static void showSnackBar(String title,String message,Widget icon){
    Get.showSnackbar(
      GetSnackBar(
